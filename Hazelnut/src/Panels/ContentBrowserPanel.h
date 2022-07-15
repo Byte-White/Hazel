@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Hazel/Renderer/Texture.h"
+#include "FileEditor.h"
 
 #include <filesystem>
 
@@ -17,6 +18,9 @@ namespace Hazel {
 		
 		Ref<Texture2D> m_DirectoryIcon;
 		Ref<Texture2D> m_FileIcon;
+		FileEditor m_FileEditor;
+		bool m_ShowItemEditor = false;
+		bool m_ShowFileEditor = false;
 	};
 
 }
